@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DetailLayout" prefHeight="612.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.DocUI.PaymentDoc.view.PaymentDocDetailController">
+   <children>
+      <AnchorPane layoutY="1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="880.0" style="-fx-background-color: rgb(230,230,230);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="saveButton" layoutX="822.0" layoutY="8.0" mnemonicParsing="false" onAction="#Save" text="保存" />
+            <Label fx:id="DocTitleName" layoutX="25.0" layoutY="9.0" prefHeight="23.0" prefWidth="142.0" text="进货单">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="editButton" layoutX="760.0" layoutY="8.0" mnemonicParsing="false" onAction="#Edit" text="编辑" />
+            <Button fx:id="cancleButton" layoutX="760.0" layoutY="8.0" mnemonicParsing="false" onAction="#Cancle" text="取消" />
+            <Label fx:id="DocTitlePrKey" layoutX="141.0" layoutY="9.0" prefHeight="23.0" prefWidth="378.0" text="user-201801110999" textFill="#797979db">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="passButton" layoutX="800.0" layoutY="3.0" mnemonicParsing="false" onAction="#Pass" prefHeight="35.0" prefWidth="74.0" stylesheets="@../../TransparentButton.css" text="通过" visible="false">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pics/selected.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="backButton" layoutX="727.0" layoutY="3.0" mnemonicParsing="false" onAction="#Back" prefHeight="35.0" prefWidth="74.0" stylesheets="@../../TransparentButton.css" text="通过" visible="false">
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pics/close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="submitButton" layoutX="822.0" layoutY="8.0" mnemonicParsing="false" onAction="#Submit" text="提交" />
+         </children>
+      </AnchorPane>
+      <ListView fx:id="AccountList" layoutX="50.0" layoutY="166.0" prefHeight="301.0" prefWidth="782.0" />
+      <Label layoutX="50.0" layoutY="95.0" text="丨银行收付款单">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="50.0" layoutY="135.0" prefHeight="31.0" prefWidth="781.0" style="-fx-background-color: #DCDCDC;">
+         <children>
+            <Label layoutX="40.0" layoutY="6.0" text="银行账号">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="251.0" layoutY="6.0" text="持卡人">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="TypeText" layoutX="399.0" layoutY="5.0" text="收款金额">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="554.0" layoutY="4.0" text="备注">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="AddAccountButton" layoutX="670.0" layoutY="85.0" mnemonicParsing="false" onAction="#AddAccount" prefHeight="15.0" prefWidth="13.0" stylesheets="@../../TransparentButton.css">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../pics/round_add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ComboBox fx:id="AccountForChoosing" layoutX="200.0" layoutY="88.0" prefHeight="27.0" prefWidth="351.0" />
+      <TextArea fx:id="Amount" layoutX="589.0" layoutY="84.0" minHeight="-Infinity" prefHeight="35.0" prefWidth="78.0" />
+      <TextArea fx:id="CusName" layoutX="106.0" layoutY="505.0" minHeight="-Infinity" prefHeight="35.0" prefWidth="151.0" />
+      <Button fx:id="AddCusButton" layoutX="217.0" layoutY="507.0" mnemonicParsing="false" onAction="#AddCus" prefHeight="15.0" prefWidth="13.0" stylesheets="@../../TransparentButton.css">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../pics/round_add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="50.0" layoutY="491.0" text="丨客户">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="620.0" layoutY="491.0" text="丨总额">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="Total" editable="false" layoutX="675.0" layoutY="505.0" minHeight="-Infinity" prefHeight="35.0" prefWidth="155.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

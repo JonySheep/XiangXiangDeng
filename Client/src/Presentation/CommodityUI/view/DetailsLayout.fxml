@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="detailsPane" prefHeight="750.0" prefWidth="270.0" style="-fx-background-color: rgb(250,250,250);" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.CommodityUI.view.DetailsLayoutController">
+   <top>
+      <AnchorPane prefHeight="50.0" prefWidth="290.0" style="-fx-background-color: rgb(250,250,250);" stylesheets="@TransparentButton.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="originalButtonSet" layoutX="14.0" layoutY="9.0" prefHeight="32.0" prefWidth="195.0" spacing="30.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="9.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#del" prefHeight="26.0" prefWidth="80.0" text="删除">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@pics/Subtract.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#edit" prefHeight="26.0" prefWidth="80.0" text="编辑">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@pics/Edit_black.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox fx:id="editButtonSet" layoutX="10.0" layoutY="9.0" spacing="30.0" visible="false" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="9.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#cancel" prefHeight="26.0" prefWidth="80.0" text="取消">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@pics/Return.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#save" prefHeight="26.0" prefWidth="80.0" text="保存">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@pics/Save.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="700.0" prefWidth="272.0" style="-fx-background-color: rgb(250,250,250);" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane layoutX="22.0" layoutY="6.0" prefHeight="372.0" prefWidth="238.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="丨编号" />
+                  <Label text="丨名称" GridPane.rowIndex="1" />
+                  <Label fx:id="typeLabel" text="丨型号" GridPane.rowIndex="2" />
+                  <Label fx:id="nowAmountLabel" text="丨库存" GridPane.rowIndex="3" />
+                  <Label fx:id="warningAmountLabel" text="丨警戒数量" GridPane.rowIndex="4" />
+                  <Label fx:id="buyingPriceLabel" text="丨进价" GridPane.rowIndex="5" />
+                  <Label fx:id="sellingPriceLabel" text="丨零售价" GridPane.rowIndex="6" />
+                  <Label fx:id="recentBuyingPriceLabel" text="丨最近进价" GridPane.rowIndex="7" />
+                  <Label fx:id="recentSellingPriceLabel" text="丨最近零售价" GridPane.rowIndex="8" />
+                  <Text fx:id="id" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" />
+                  <Text fx:id="name" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Text fx:id="type" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Text fx:id="nowAmount" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Text fx:id="warningAmount" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Text fx:id="buyingPrice" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Text fx:id="sellingPrice" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Text fx:id="recentBuyingPrice" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Text fx:id="recentSellingPrice" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <TextField fx:id="idField" visible="false" GridPane.columnIndex="1" />
+                  <TextField fx:id="nameField" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="typeField" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="nowAmountField" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="warningAmountField" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="buyingPriceField" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="sellingPriceField" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField fx:id="recentBuyingPriceField" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextField fx:id="recentSellingPriceField" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+               </children>
+            </GridPane>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

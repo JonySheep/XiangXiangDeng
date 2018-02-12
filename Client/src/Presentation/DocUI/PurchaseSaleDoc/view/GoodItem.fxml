@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="30.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.DocUI.PurchaseSaleDoc.view.GoodItemController">
+   <children>
+      <Text fx:id="GoodName" fill="#0000006f" layoutX="-4.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="200W香香灯" textAlignment="CENTER" wrappingWidth="132.41197299957275" />
+      <Text fx:id="GoodPrize" fill="#0000006f" layoutX="171.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="200" textAlignment="CENTER" wrappingWidth="76.06732273101807" />
+      <Text fx:id="GoodNumber" fill="#0000006f" layoutX="321.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="200" textAlignment="CENTER" wrappingWidth="76.06732273101807" />
+      <Text fx:id="Comment" fill="#0000006f" layoutX="485.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="香香灯全世界最香" wrappingWidth="298.4140634536743" />
+   </children>
+</AnchorPane>

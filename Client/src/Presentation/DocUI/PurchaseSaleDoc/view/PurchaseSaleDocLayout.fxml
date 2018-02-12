@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="DocLayout" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.DocUI.PurchaseSaleDoc.view.PurchaseSaleDocLayoutController">
+   <left>
+      <BorderPane fx:id="DetailLayout" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="290.0" BorderPane.alignment="CENTER">
+         <top>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="290.0" style="-fx-background-color: #DCDCDC;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox layoutX="8.0" layoutY="9.0" stylesheets="@../../../AccountUI/view/TransparentButton.css">
+                     <children>
+                        <ComboBox fx:id="DocKind" prefHeight="32.0" prefWidth="110.0" />
+                        <Button fx:id="addButton" mnemonicParsing="false" onAction="#Add" prefHeight="30.0" prefWidth="82.0" text="新建">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../CustomerUI/pics/Add.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#Delete" prefHeight="30.0" prefWidth="82.0" text="删除">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../CustomerUI/pics/Substract.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <ListView fx:id="DocList" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F7F7F7;" stylesheets="@../../TransparentListView.css" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </left>
+</BorderPane>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="30.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.StrategyUI.view.giftPreviewController">
+   <children>
+      <Text fx:id="GoodName" fill="#9e9e9e" layoutX="35.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="超级香香香灯" AnchorPane.leftAnchor="50.0" />
+      <Text fx:id="GoodID" fill="#9e9e9e" layoutX="200.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="XXD-23333" AnchorPane.leftAnchor="200.0" />
+      <Text fx:id="Number" fill="#9e9e9e" layoutX="500.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" AnchorPane.leftAnchor="500.0" />
+   </children>
+</AnchorPane>

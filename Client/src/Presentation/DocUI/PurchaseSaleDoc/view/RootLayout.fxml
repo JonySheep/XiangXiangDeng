@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="RootLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.DocUI.PurchaseSaleDoc.view.RootLayoutController">
+   <top>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="32.0" prefWidth="1200.0" style="-fx-background-color: #447ED9;" stylesheets="@../../TransparentButton.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutX="14.0" layoutY="11.0" prefHeight="30.0" prefWidth="231.0" spacing="3.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="10.0">
+               <children>
+                  <Button fx:id="CusManageButton" minHeight="-Infinity" mnemonicParsing="false" onAction="#showCusManage" prefHeight="30.0" prefWidth="104.0" text="客户管理" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../pics/bussiness-man.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="30.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pics/Splitter.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="CusDocButton" mnemonicParsing="false" onAction="#showCusDoc" prefHeight="30.0" prefWidth="109.0" text="制定单据" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../pics/Pencil.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="1106.0" layoutY="8.0" minHeight="-Infinity" prefHeight="30.0" prefWidth="275.0" spacing="3.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="10.0">
+               <children>
+                  <Button fx:id="MessageButton" mnemonicParsing="false" prefHeight="27.0" prefWidth="32.0">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../pics/Messages.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="30.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pics/Splitter.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="UserInfo" prefHeight="29.0" prefWidth="147.0" text="欢迎，Qinliu(PC12138)" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Label>
+                  <ImageView fitHeight="30.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pics/Splitter.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="logoutButton" mnemonicParsing="false" text="登出" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

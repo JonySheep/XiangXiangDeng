@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="25.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.DocUI.PaymentDoc.view.AccountItemPreviewController">
+   <children>
+      <Text fx:id="AccountID" layoutX="18.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0000000000022222222" />
+      <Text fx:id="AccountName" layoutX="244.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="李泽言" />
+      <Text fx:id="Money" layoutX="398.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100" />
+      <Text fx:id="Comment" layoutX="550.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="李总裁生日快乐！！" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="25.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.CustomerUI.info.CusListPreviewController">
+   <children>
+      <Text fx:id="CusID" fill="#424242e2" layoutX="26.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GYS000001" AnchorPane.leftAnchor="26.0" />
+      <Text fx:id="CusName" fill="#424242e2" layoutX="213.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="李泽言" AnchorPane.leftAnchor="213.0" />
+      <Text fx:id="CusLevel" fill="#424242e2" layoutX="399.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" AnchorPane.leftAnchor="399.0" />
+   </children>
+</AnchorPane>

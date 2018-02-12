@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.StrategyUI.view.DiscountDetailController">
+   <children>
+      <Text layoutX="230.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="折让金额" AnchorPane.leftAnchor="230.0" />
+      <TextArea fx:id="discount" layoutX="250.0" layoutY="50.0" minHeight="-Infinity" prefHeight="30.0" prefWidth="164.0" AnchorPane.leftAnchor="300.0" />
+   </children>
+</AnchorPane>

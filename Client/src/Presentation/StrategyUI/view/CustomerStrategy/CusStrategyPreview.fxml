@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="33.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.StrategyUI.view.CustomerStrategy.CusStrategyPreviewController">
+   <children>
+      <Text fx:id="StartTime" layoutX="69.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2017.8.30" AnchorPane.leftAnchor="130.0" />
+      <Text fx:id="EndTime" layoutX="350.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2017.10.30" AnchorPane.leftAnchor="330.0" />
+      <Text fx:id="CusLevel" layoutX="20.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" AnchorPane.leftAnchor="550.0" />
+   </children>
+</AnchorPane>

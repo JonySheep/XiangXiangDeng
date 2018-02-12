@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.StrategyUI.view.PackageStrategy.PkgStrategyPreviewController">
+   <children>
+      <Text fx:id="begin" layoutX="106.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2018-01-01" AnchorPane.leftAnchor="150.0" />
+      <Text fx:id="end" layoutX="304.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2018-01-30" AnchorPane.leftAnchor="350.0" />
+      <Text fx:id="PkgName" layoutX="559.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="超香组合" AnchorPane.leftAnchor="550.0" />
+      <Text fx:id="PkgPrize" layoutX="716.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="200" AnchorPane.leftAnchor="750.0" />
+   </children>
+</AnchorPane>

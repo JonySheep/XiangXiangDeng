@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="rootLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.MainUI.view.ManagerRootLayoutController">
+   <top>
+      <AnchorPane prefHeight="31.0" prefWidth="1200.0" style="-fx-background-color: #447ED9;" stylesheets="@../TransparentButton.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutX="1106.0" layoutY="8.0" minHeight="-Infinity" prefHeight="35.0" prefWidth="338.0" spacing="10.0" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="8.0">
+               <children>
+                  <ImageView fx:id="messageLogo" fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pics/Messages.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pics/Splitter.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="welcome" prefHeight="29.0" prefWidth="183.0" text="欢迎，Qinliu(PC12138)" textFill="WHITE" />
+                  <ImageView fitHeight="33.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pics/Splitter.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="LogoutButton" mnemonicParsing="false" onAction="#logout" prefHeight="27.0" prefWidth="50.0" stylesheets="@TransparentButton.css" text="登出" textFill="WHITE" />
+               </children>
+            </HBox>
+            <Button fx:id="CheckDocButton" layoutX="3.0" layoutY="6.0" mnemonicParsing="false" onAction="#jumpCheckingDoc" prefHeight="38.0" prefWidth="109.0" stylesheets="@TransparentButton.css" text="审批单据" textAlignment="RIGHT" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pics/审批单据图标.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <ImageView fitHeight="30.0" fitWidth="42.0" layoutX="108.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/Splitter.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="MakeStrategyButton" layoutX="119.0" layoutY="7.0" mnemonicParsing="false" onAction="#jumpStrategy" prefHeight="36.0" prefWidth="104.0" stylesheets="@TransparentButton.css" text="促销策略" textAlignment="RIGHT" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pics/discount.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <ImageView fitHeight="30.0" fitWidth="42.0" layoutX="221.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/Splitter.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="CheckLogButton" layoutX="233.0" layoutY="6.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="99.0" stylesheets="@TransparentButton.css" text="操作日志" textAlignment="RIGHT" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pics/log.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <ImageView fitHeight="30.0" fitWidth="42.0" layoutX="329.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/Splitter.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="SaleConditionButton" layoutX="339.0" layoutY="7.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="103.0" stylesheets="@TransparentButton.css" text="销售明细" textAlignment="RIGHT" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pics/Chart.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <ImageView fitHeight="30.0" fitWidth="42.0" layoutX="436.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/Splitter.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="ManageHistoryButton" layoutX="446.0" layoutY="6.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="99.0" stylesheets="@TransparentButton.css" text="经营历程" textAlignment="RIGHT" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pics/Chart.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <ImageView fitHeight="30.0" fitWidth="42.0" layoutX="543.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pics/Splitter.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="ManageConditionButton" layoutX="555.0" layoutY="8.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="99.0" stylesheets="@TransparentButton.css" text="经营情况" textAlignment="RIGHT" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pics/Chart.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="75.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.DocUI.PurchaseSaleDoc.view.PurchaseSaleDocPreviewController">
+   <children>
+      <Label fx:id="comment" layoutX="11.0" layoutY="49.0" prefHeight="17.0" prefWidth="270.0" text="清流最喜欢香香灯啦" textFill="#9e9c9c" />
+      <AnchorPane layoutX="-6.0" prefHeight="40.0" prefWidth="299.0">
+         <children>
+            <ImageView fitHeight="19.0" fitWidth="22.0" layoutX="47.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../CustomerUI/pics/我的.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="CusName" layoutX="67.0" layoutY="8.0" text="清流">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Amount" layoutX="127.0" layoutY="8.0" text="60,000 RMB" textFill="#000000b6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Text fx:id="DocType" fill="#00000025" layoutX="16.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="进">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Circle fill="#b5b5b51f" layoutX="24.0" layoutY="16.0" radius="10.0" stroke="WHITE" strokeType="INSIDE" />
+            <Label fx:id="DocID" layoutX="17.0" layoutY="34.0" prefHeight="13.0" prefWidth="166.0" text="JHD-20171024-00001">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

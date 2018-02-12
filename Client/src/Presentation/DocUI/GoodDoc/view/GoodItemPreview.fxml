@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="25.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.DocUI.GoodDoc.view.GoodItemPreviewController">
+   <children>
+      <Text fx:id="goodName" layoutX="20.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="超级香香灯" />
+      <Text fx:id="goodID" layoutX="202.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00000001" />
+      <Text fx:id="goodType" layoutX="381.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="xxxxxxxx" />
+      <Text fx:id="goodCommodity" layoutX="561.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100" />
+      <Text fx:id="goodWarning" layoutX="706.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="23" />
+   </children>
+</AnchorPane>

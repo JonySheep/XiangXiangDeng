@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="25.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.DocUI.PaymentDoc.view.CashItemPreviewController">
+   <children>
+      <Text fx:id="itemName" layoutX="27.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0000000000022222222" />
+      <Text fx:id="Amount" layoutX="262.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100" />
+      <Text fx:id="comment" layoutX="482.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="李总裁生日快乐！！" />
+   </children>
+</AnchorPane>

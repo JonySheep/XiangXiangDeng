@@ -1,0 +1,16 @@
+.button {
+    -fx-background-color: none;
+}
+
+.button:hover {
+    -fx-background-color: rgba(200, 200, 200, 0.5);
+}
+
+
+.menu-button {
+    -fx-background-color: none;
+}
+
+.menu-button:hover {
+    -fx-background-color: rgba(200, 200, 200, 0.5);
+}+

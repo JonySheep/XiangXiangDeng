@@ -1,0 +1,41 @@
+.tree-cell .tree-disclosure-node .arrow {
+    -fx-scale-shape: false;
+
+    -fx-background-color: transparent;
+    -fx-shape: "M 0 4 L 0 -4 L 5 0 z";
+    -fx-border-color: grey;
+    -fx-border-width: 0.083333em;
+}
+
+.tree-cell:expanded .tree-disclosure-node .arrow {
+    -fx-scale-shape: false;
+
+    -fx-background-color: -fx-mark-color;
+    -fx-rotate: 90;
+    /*-fx-shape: "M 0 3 L 6 -3 L 6 3 z";*/
+    -fx-border-width: 0.083333em;
+}
+
+.tree-cell:filled:hover .tree-disclosure-node .arrow {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(142, 208, 255, 1);
+}
+
+.tree-cell:filled:selected .tree-disclosure-node .arrow {
+    -fx-border-color: rgba(142, 208, 255, 1);
+}
+
+.tree-cell:filled:selected:hover .tree-disclosure-node .arrow {
+    -fx-border-color: rgba(142, 208, 255, 1);
+}
+
+.tree-cell:selected{
+    -fx-background-color: rgba(142, 208, 255, 0.5);
+    -fx-light-text-color: black;
+}
+
+.tree-cell{
+    -fx-background-color: rgb(250,250,250);
+}
+
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:id="DocLayout" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.DocUI.PaymentDoc.view.PaymentDocLayoutController">
+    <left>
+        <BorderPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="290.0" BorderPane.alignment="CENTER">
+            <top>
+                <VBox prefHeight="46.0" prefWidth="290.0" stylesheets="@../../../CustomerUI/TransparentButton.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="290.0" style="-fx-background-color: #DCDCDC;">
+                            <children>
+                                <ComboBox fx:id="DocKind" layoutX="8.0" layoutY="10.0" onAction="#chooseType" prefHeight="27.0" prefWidth="126.0" />
+                                <Button fx:id="deleteButton" layoutX="206.0" layoutY="6.0" mnemonicParsing="false" onAction="#Delete" prefHeight="34.0" prefWidth="70.0" text="删除">
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../CustomerUI/pics/Substract.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="addButton" layoutX="135.0" layoutY="5.0" mnemonicParsing="false" onAction="#Add" prefHeight="37.0" prefWidth="70.0" text="新建">
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../CustomerUI/pics/Add.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+            </top>
+            <right>
+                <ListView fx:id="DocList" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="290.0" style="-fx-background-color: #F7F7F7;" stylesheets="@../../../CustomerUI/TransparentListView.css" BorderPane.alignment="CENTER">
+                    <BorderPane.margin>
+                        <Insets top="-7.0" />
+                    </BorderPane.margin></ListView>
+            </right>
+        </BorderPane>
+    </left>
+   <center>
+      <BorderPane fx:id="DetailLayout" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

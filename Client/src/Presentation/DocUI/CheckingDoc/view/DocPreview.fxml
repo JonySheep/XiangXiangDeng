@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="75.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.DocUI.CheckingDoc.view.DocPreviewController">
+   <children>
+      <Label fx:id="Comment" layoutX="14.0" layoutY="50.0" text="清流最喜欢香香灯啦" textFill="#9e9c9c" />
+      <AnchorPane layoutX="-6.0" prefHeight="40.0" prefWidth="299.0">
+         <children>
+            <ImageView fitHeight="19.0" fitWidth="22.0" layoutX="51.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../CustomerUI/pics/我的.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="Name" layoutX="72.0" layoutY="12.0" text="清流">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Text fx:id="DocType" fill="#00000025" layoutX="16.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="进">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Circle fill="#b5b5b51f" layoutX="24.0" layoutY="16.0" radius="10.0" stroke="WHITE" strokeType="INSIDE" />
+            <Label fx:id="prKey" layoutX="19.0" layoutY="33.0" prefHeight="17.0" prefWidth="178.0" text="0000001-201800000002" textFill="#757171">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="25.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.StrategyUI.view.giftListPreviewController">
+   <children>
+      <Text fx:id="name" fill="#424242b2" layoutX="26.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="超香香香灯" />
+      <Text fx:id="number" fill="#424242b2" layoutX="297.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
+   </children>
+</AnchorPane>

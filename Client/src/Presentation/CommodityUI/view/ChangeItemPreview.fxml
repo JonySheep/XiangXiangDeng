@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="31.0" prefWidth="1122.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.CommodityUI.view.ChangeItemPreviewController">
+   <children>
+      <Label fx:id="name" alignment="CENTER" layoutX="20.0" layoutY="6.0" text="名称" />
+      <Label fx:id="id" alignment="CENTER" layoutX="110.0" layoutY="6.0" text="编号" />
+      <Label fx:id="type" alignment="CENTER" layoutX="250.0" layoutY="6.0" text="型号" />
+      <Label fx:id="out" alignment="CENTER" layoutX="380.0" layoutY="6.0" text="总出库" />
+      <Label fx:id="in" alignment="CENTER" layoutX="515.0" layoutY="6.0" text="总入库" />
+      <Label fx:id="change" alignment="CENTER" layoutX="650.0" layoutY="6.0" text="总变动" />
+      <Label fx:id="sales" alignment="CENTER" layoutX="785.0" layoutY="6.0" text="总销售" />
+      <Label fx:id="purchase" alignment="CENTER" layoutX="920.0" layoutY="6.0" text="总进货" />
+      <Label fx:id="money" alignment="CENTER" layoutX="1055.0" layoutY="6.0" text="总金额" />
+   </children>
+</AnchorPane>

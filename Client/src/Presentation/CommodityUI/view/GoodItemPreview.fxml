@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="30.0" prefWidth="193.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.CommodityUI.view.GoodItemPreviewController">
+   <children>
+      <Text fx:id="name" layoutX="14.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" AnchorPane.leftAnchor="10.0" />
+      <Text fx:id="amount" layoutX="258.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" AnchorPane.rightAnchor="10.0" />
+      <TextField fx:id="amountField" layoutX="240.0" onKeyPressed="#saveOrCancel" prefHeight="30.0" prefWidth="41.0" visible="false" AnchorPane.rightAnchor="5.0" />
+   </children>
+</AnchorPane>

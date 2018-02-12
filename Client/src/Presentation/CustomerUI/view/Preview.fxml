@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="65.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.CustomerUI.view.PreviewController">
+   <children>
+      <Label fx:id="comment" layoutX="14.0" layoutY="38.0" text="清流最喜欢香香灯啦" textFill="#9e9c9c" />
+      <Label fx:id="CustomerID" layoutX="14.0" layoutY="5.0" prefHeight="30.0" prefWidth="64.0" text="XSS000001">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="CustomerName" layoutX="93.0" layoutY="9.0" text="清流">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="CustomerKind" layoutX="169.0" layoutY="10.0" textFill="#9d9c9c">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="CustomerLevel" layoutX="227.0" layoutY="10.0" text="VIP5" textFill="#9d9c9c" />
+   </children>
+</AnchorPane>

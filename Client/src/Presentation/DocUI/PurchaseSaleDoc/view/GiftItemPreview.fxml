@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="20.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.DocUI.PurchaseSaleDoc.view.GiftItemPreviewController">
+   <children>
+      <Text fx:id="name" layoutX="86.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="香香灯" />
+      <Text fx:id="number" layoutX="302.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+   </children>
+</AnchorPane>

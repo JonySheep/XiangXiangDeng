@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="DetailLayout" prefHeight="750.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.DocUI.PurchaseSaleDoc.view.PurchaseDocDetailLayoutController">
+   <top>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="910.0" style="-fx-background-color: rgb(230,230,230);" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Button fx:id="saveButton" layoutX="822.0" layoutY="8.0" mnemonicParsing="false" onAction="#Save" text="保存" />
+            <Label fx:id="titleDocName" alignment="CENTER_RIGHT" layoutX="14.0" layoutY="13.0" prefHeight="24.0" prefWidth="102.0" text="进货单">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="editButton" layoutX="760.0" layoutY="8.0" mnemonicParsing="false" onAction="#Edit" text="编辑" />
+            <Label fx:id="titleDocID" layoutX="133.0" layoutY="12.0" prefHeight="27.0" prefWidth="397.0" text="JHD-20171024-00001" textFill="#8d8a88">
+               <font>
+                  <Font name="Bangla MN" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="cancleButton" layoutX="760.0" layoutY="8.0" mnemonicParsing="false" onAction="#Cancle" text="取消" />
+            <Button fx:id="passButton" layoutX="828.0" layoutY="6.0" mnemonicParsing="false" onAction="#Pass" prefHeight="35.0" prefWidth="74.0" stylesheets="@../../TransparentButton.css" text="通过" visible="false">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pics/selected.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="backButton" layoutX="749.0" layoutY="6.0" mnemonicParsing="false" onAction="#Back" prefHeight="34.0" prefWidth="75.0" stylesheets="@../../TransparentButton.css" text="退回" visible="false">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pics/close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="submitButton" layoutX="822.0" layoutY="8.0" mnemonicParsing="false" onAction="#Submit" text="提交" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="680.0" style="-fx-background-color: rgb(255,255,255);" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane cacheShape="false" centerShape="false" layoutX="61.0" layoutY="30.0" prefHeight="69.0" prefWidth="646.0" scaleShape="false" AnchorPane.leftAnchor="61.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="245.38055419921875" minWidth="10.0" prefWidth="190.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="366.60479736328125" minWidth="10.0" prefWidth="176.44830322265625" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="321.4017333984375" minWidth="10.0" prefWidth="279.55169677734375" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="CusKind" text="丨供应商">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label text="丨操作员" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="丨仓库" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="CusName" editable="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="115.0" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="13.0" right="50.0" />
+                     </GridPane.margin>
+                  </TextArea>
+                  <ComboBox fx:id="storage" prefHeight="27.0" prefWidth="76.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+
+                           <String fx:value="1" />
+                        </FXCollections>
+                     </items>
+
+                     <GridPane.margin>
+                        <Insets bottom="13.0" />
+                     </GridPane.margin>
+                  </ComboBox>
+                  <TextArea fx:id="clerk" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="117.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="13.0" right="50.0" />
+                     </GridPane.margin>
+                  </TextArea>
+                  <Button fx:id="AddCusButton" mnemonicParsing="false" onAction="#AddCus" prefHeight="0.0" prefWidth="4.0" stylesheets="@../../TransparentButton.css" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../pics/round_add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets bottom="12.0" left="100.0" />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+            </GridPane>
+            <ListView fx:id="GoodItemList" layoutX="61.0" layoutY="199.0" prefHeight="200.0" prefWidth="789.0" stylesheets="@../../TransparentListView.css" />
+            <Label fx:id="ListName" layoutX="61.0" layoutY="135.0" text="丨进货商品列表">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="667.0" layoutY="446.0" text="丨总额">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="Amount" layoutX="720.0" layoutY="446.0" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#calTotal" prefHeight="37.0" prefWidth="130.0">
+               <font>
+                  <Font size="17.0" />
+               </font></TextArea>
+            <AnchorPane layoutX="61.0" layoutY="169.0" prefHeight="30.0" prefWidth="789.0" style="-fx-background-color: rgb(230,230,230) rgb(230,230,230);">
+               <children>
+                  <Label layoutX="193.0" layoutY="6.0">
+                     <font>
+                        <Font name="AppleGothic Regular" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="45.0" layoutY="5.0" text="商品名">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="prize" layoutX="190.0" layoutY="5.0" text="进货单价">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="number" layoutX="323.0" layoutY="5.0" text="进货数量（个）">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="490.0" layoutY="5.0" text="备注">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="AddGoodButton" layoutX="176.0" layoutY="130.0" mnemonicParsing="false" onAction="#AddGood" prefHeight="30.0" prefWidth="34.0" stylesheets="@../../TransparentButton.css">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pics/round_add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="776.0" layoutY="399.0" mnemonicParsing="false" onAction="#calTotal" prefHeight="27.0" prefWidth="74.0" stylesheets="@../../TransparentButton.css" text="确认">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pics/selected.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="188.0" prefWidth="880.0" style="-fx-background-color: rgb(255,255,255) rgb(255,255,255);" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="comment" alignment="TOP_LEFT" layoutX="61.0" layoutY="31.0" prefHeight="114.0" prefWidth="789.0" />
+            <Label layoutX="61.0" layoutY="4.0" text="丨备注">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

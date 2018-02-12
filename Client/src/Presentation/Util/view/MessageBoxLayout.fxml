@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+
+
+<ListView fx:id="messageList" prefHeight="473.0" prefWidth="250.0" stylesheets="@TransparentListView.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Util.view.MessageBoxLayoutController" />
