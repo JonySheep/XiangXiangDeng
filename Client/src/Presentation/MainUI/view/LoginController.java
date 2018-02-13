@@ -145,18 +145,6 @@ public class LoginController {
             alert.showAndWait();
         }
 
-
-
-        //UserUI userUI = new UserUI(primaryStage);
-        //CommodityUI commodityUI = new CommodityUI(primaryStage);
-        //StrategyMainUI strategyMainUI=new StrategyMainUI(primaryStage);
-
-
-        //PaymentDocMainUI paymentDocMainUI=new PaymentDocMainUI(primaryStage);
-        //userController.login(username.getText(),password.getText());
-
-
-
     }
 
     /**
