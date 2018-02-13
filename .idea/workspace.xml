@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e9df5be-8f87-47b9-a61c-eeb30543773b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Client/Client.iml" afterPath="$PROJECT_DIR$/Client/Client.iml" />
-      <change beforePath="$PROJECT_DIR$/Client/src/Presentation/AccountUI/AccountDataHelper.java" afterPath="$PROJECT_DIR$/Client/src/Presentation/AccountUI/AccountDataHelper.java" />
-      <change beforePath="$PROJECT_DIR$/Server/Server.iml" afterPath="$PROJECT_DIR$/Server/Server.iml" />
-    </list>
+    <list default="true" id="7e9df5be-8f87-47b9-a61c-eeb30543773b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -361,12 +355,12 @@
       <updated>1518453600088</updated>
       <workItem from="1518453601910" duration="50000" />
       <workItem from="1518455054607" duration="7000" />
-      <workItem from="1518455078432" duration="462000" />
+      <workItem from="1518455078432" duration="539000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="519000" />
+    <option name="totallyTimeSpent" value="596000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="22" width="1344" height="878" extended-state="0" />
